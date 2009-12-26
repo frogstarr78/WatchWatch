@@ -1,0 +1,4 @@
+http://sublink.ca/north/
+http://ntp.isc.org/bin/view/Support/JavaSntpClient
+https://jdic.dev.java.net/nonav/documentation/javadoc/jdic/index.html
+http://www.twmacinta.com/myjava/fast_md5.php

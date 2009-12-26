@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for JDIC Demo Application (TrayIcon) --> 
+<jnlp spec="1.0+" 
+    codebase="http://javadesktop.org/jdic/demo/TrayIcon" 
+    href="trayicon.jnlp"> 
+    <information> 
+        <title>JDIC Demo - TrayIcon</title> 
+        <vendor>https://jdic.dev.java.net</vendor> 
+        <description>JDIC Demo Application - TrayIcon</description> 
+        <description kind="short">JDIC Demo Application - TrayIcon</description> 
+        <offline-allowed/> 
+    </information> 
+    <security> 
+        <all-permissions/>
+    </security> 
+    <resources>
+        <j2se      version="1.4+"/>
+        <jar       href="trayicon.jar"/> 
+    </resources>
+    <resources os="Windows">
+        <jar       href="windows/jdic.jar"/> 
+        <nativelib href="windows/jdic-native.jar"/>
+    </resources>
+    <resources os="SunOS" arch="sparc">
+        <jar       href="solaris_sparc/jdic.jar"/> 
+        <nativelib href="solaris_sparc/jdic-native.jar"/>
+    </resources>
+    <resources os="Linux">
+        <jar       href="linux/jdic.jar"/> 
+        <nativelib href="linux/jdic-native.jar"/>
+    </resources>
+    <application-desc main-class="Tray"/>
+</jnlp>
+

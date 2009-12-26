@@ -1,0 +1,1 @@
+javac -classpath $CLASSPATH:`pwd`:./linux/jdic.jar $1.java
