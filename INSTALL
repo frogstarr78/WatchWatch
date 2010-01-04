@@ -1,0 +1,14 @@
+Requirements:
+ JDIC (for the Tray Icon functionality)
+ PostgreSQL-JDBC (database connection layer)
+
+
+Setup:
+	1. Ensure that postgresql is at least listening on localhost 127.0.0.1.
+		( The JDBC doesn't work on domain sockets ).
+	2. As a user who can create databases and users, run:
+	   psql -f schema-up.sql
+	   If you have any trouble with this or you want to undo it, run:
+	   psql -f schema-down.sql
+	3. If your putting this into production, run the schema-clean.sql file:
+	   psql -f scheam-clean.sql
