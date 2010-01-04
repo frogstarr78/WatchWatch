@@ -6,10 +6,10 @@ public abstract class Row implements MetaDescription {
 	public int id;
 	protected String host = "127.0.0.1";
 //	protected String host = "68.113.7.135";
-	protected String db = "temps_rondin";
+	protected String db = "watch_watch";
 	protected String url = "jdbc:postgresql://" + host + "/" + db + "";
-	protected String user = "scott";
-	protected String password = "Un1-Ball";
+	protected String user = "watch_watch";
+	protected String password = "JiacNeev";
 	public Connection dbConn;
 	protected Statement queryStatement;
 	protected ResultSet resultSet;
@@ -20,8 +20,7 @@ public abstract class Row implements MetaDescription {
 
 	public String getPrimaryKey() { return "id"; }
 	public abstract String getTableName();
-	public abstract void setFromRow(ResultSet databaseValues)
-		throws java.sql.SQLException, ClassNotFoundException, NonexistantValueException; 
+	public abstract void setFromRow(ResultSet databaseValues) throws java.sql.SQLException, ClassNotFoundException, NonexistantValueException; 
 	public Row () throws SQLException, ClassNotFoundException {
 		this(0, "");
 
