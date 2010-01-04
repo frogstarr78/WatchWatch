@@ -120,10 +120,7 @@ public class Tray implements ActionListener, ItemListener {
         menu.add(menuItem);
         
         // ImageIcon i = new ImageIcon("duke.gif");
-        ImageIcon i = new ImageIcon(Tray.class.getResource("
-		
-		"));
-//        ImageIcon i = new ImageIcon(Tray.class.getResource("images/duke.gif"));
+        ImageIcon i = new ImageIcon(Tray.class.getResource("images/duke.gif"));
 
         ti = new TrayIcon(i, "JDIC Tray Icon API Demo - TrayIcon", menu);
 
